@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff; /* White text */
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .filter-group {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .toggle-button {
+    background-color: #1e88e5; /* Blue background */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  .filter-options {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content:center;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .filter-options button {
+    background-color: #333; /* Dark button background */
+    border: 1px solid #444; /* Slightly lighter border */
+    color: #e0e0e0; /* Light text color */
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1 1 auto;
+    max-width: 150px;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .filter-options button:hover {
+    background-color: #555; /* Lighter dark on hover */
+    border-color: #666; /* Lighter border on hover */
+  }
+  
+  #data-list {
+    padding: 0;
+    list-style: none;
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  
+  #data-list li {
+    border: 1px solid #333; /* Dark border */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #1e1e1e; /* Dark background for list items */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+  }
+  
+  #data-list div {
+    margin-bottom: 8px;
+  }
+  
+  #data-list strong {
+    color: #1e88e5; /* Blue color for labels */
+  }
+
+  #data-list img {
+    width: 65px;
+    border-radius: 100%;
+  }
