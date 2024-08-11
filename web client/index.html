@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Discord Admin Dashboard</h1>
+  
+  <nav>
+    <div class="filter-group">
+      <button class="toggle-button">Event Logs</button>
+      <div class="filter-options" id="event-filters">
+        <button data-filter-type="event_logs" data-filter-value="Message Created">Message Created</button>
+        <button data-filter-type="event_logs" data-filter-value="Message Edited">Message Edited</button>
+        <button data-filter-type="event_logs" data-filter-value="Message Deleted">Message Deleted</button>
+        <button data-filter-type="event_logs" data-filter-value="Member Join">Member Joined</button>
+        <button data-filter-type="event_logs" data-filter-value="Member Leave">Member Left</button>
+        <button data-filter-type="event_logs" data-filter-value="Channel Created">Channel Created</button>
+        <button data-filter-type="event_logs" data-filter-value="Voice Channel Join">Voice Channel Joined</button>
+        <button data-filter-type="event_logs" data-filter-value="Voice Channel Leave">Voice Channel Left</button>
+        <button data-filter-type="event_logs" data-filter-value="Voice Channel Switch">Voice Channel Switched</button>
+        <button data-filter-type="event_logs" data-filter-value="Command Used">Command Used</button>
+        <button data-filter-type="event_logs" data-filter-value="Role Created">Role Created</button>
+        <button data-filter-type="event_logs" data-filter-value="Role Deleted">Role Deleted</button>
+        <button data-filter-type="event_logs" data-filter-value="Role Assigned">Role Assigned</button>
+        <button data-filter-type="event_logs" data-filter-value="Server Boost">Server Boost</button>
+        <button data-filter-type="event_logs" data-filter-value="Emojis Added">Emojis Added</button>
+        <button data-filter-type="event_logs" data-filter-value="Emojis Removed">Emojis Removed</button>
+        <button data-filter-type="event_logs" data-filter-value="Server Updated">Server Updated</button>
+        <button data-filter-type="event_logs" data-filter-value="User Typing">User Typing</button>
+        <button data-filter-type="event_logs" data-filter-value="">All Events</button>
+      </div>
+    </div>
+    
+    <div class="filter-group">
+      <button class="toggle-button">Message Logs</button>
+      <div class="filter-options" id="message-filters">
+        <button data-filter-type="message_logs" data-filter-value="">All Messages</button>
+      </div>
+    </div>
+  </nav>
+
+  <ul id="data-list"></ul>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
